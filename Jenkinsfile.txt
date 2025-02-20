@@ -58,7 +58,7 @@ pipeline {
                     if terraform state show aws_key_pair.example 2>/dev/null; then
                         echo "Key pair already exists in the prod workspace"
                     else
-                        terraform import aws_key_pair.example key02 || echo "Key pair already imported"
+                        terraform import aws_key_pair.example test1 || echo "Key pair already imported"
                     fi
                     terraform destroy -auto-approve
                     terraform apply -auto-approve
