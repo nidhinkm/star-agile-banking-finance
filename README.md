@@ -5,4 +5,6 @@ In this project, I created a CI/CD pipeline that automates the development lifec
 
 
 ## Overview
-![Description of GIF](./assets/gifproj.gif)
+![Description of GIF](./assets/gifproj.gif)![gifproj](https://github.com/user-attachments/assets/64c2355d-3b7d-4a1c-ba91-45e1a6325ad6)
+
+
