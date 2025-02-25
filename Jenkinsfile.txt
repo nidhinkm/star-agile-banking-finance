@@ -14,7 +14,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'docker build -t nidhinkm/dizen14-25img:v1.0 .'
+                    sh 'docker build -t nidhinkm/dizen14-25img:v1.1 .'
                     sh 'docker images'
                 }
             }
@@ -23,7 +23,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'docker', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
                     sh "echo $PASS | docker login -u $USER --password-stdin"
-                    sh 'docker push nidhinkm/dizen14-25img:v1.0'
+                    sh 'docker push nidhinkm/dizen14-25img:v1.1'
                 }
             }
         }
