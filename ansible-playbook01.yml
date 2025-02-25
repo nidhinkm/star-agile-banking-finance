@@ -10,7 +10,7 @@
       apt:
         name: docker.io
     - name: Deploy Docker Container
-      command: docker run -itd --name capstone01 -p 8084:8081 nidhinkm/dizen14-25img:v1.0
+      command: docker run -itd --name capstone01 -p 8084:8081 nidhinkm/dizen14-25img:v1.1
     - name: getting node exporter
       shell: |
         wget https://github.com/prometheus/node_exporter/releases/download/v1.8.2/node_exporter-1.8.2.linux-amd64.tar.gz
